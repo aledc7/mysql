@@ -21,6 +21,8 @@ sudo sh -c 'echo /usr/local/mysql/bin > /etc/paths.d/mysql'
 ```mysql
 mysql -u root -p
 ```
+Una vez dentro de la terminal, cambiará el promp, mostrando: __mysql__
+Aqui ya podremos empezar a correr los comandos propios de mysql.
 
 ## Crear Base de Datos
 ```mysql
