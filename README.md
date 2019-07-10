@@ -4,7 +4,7 @@
 [![GitHub release](https://github.com/aledc7/Scrum-Certification/blob/master/recursos/release.svg)](https://aledc.com)
 [![Dependencies](https://github.com/aledc7/Scrum-Certification/blob/master/recursos/dependencias-none.svg)](https://aledc.com)
 
-
+![Mysql](https://github.com/aledc7/mysql/blob/master/mysql.png?raw=true)
 # MYSQL - Comandos Básicos
 
 
