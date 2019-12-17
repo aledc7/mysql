@@ -14,6 +14,19 @@
 sudo sh -c 'echo /usr/local/mysql/bin > /etc/paths.d/mysql'
 ````
 
+## Mysql en MAC bajo MAMP
+Para usar la terminal de mysql en MAMP en una MAC, correr en la terminal el siguiente comando:
+```php
+/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
+`````
+
+## Ver si tiene seteado UTF8 o alguna otra    
+
+```php
+show variables like "%character%"; 
+````
+
+
 
 
 
