@@ -42,6 +42,12 @@ Aqui ya podremos empezar a correr los comandos propios de mysql.
 mysql> create database nombre_base;
 ```
 
+## Subiendo Scrip de datos a una base de datos ya creada
+```php
+/Applications/MAMP/Library/bin/mysql -u root -proot nombre_base < /Users/aledc/Desktop/archivo_a_subir.sql;
+````
+
+
 ## Mostrar todas Las Bases de Datos
 ```mysql
 mysql> show databases;
