@@ -306,4 +306,16 @@ SELECT DISTINCT TABLE_NAME
         AND TABLE_SCHEMA='nombre_base'
 ````
 
+Tambien es posible usar comidines para buscar solo una parte del nombre de la columna
+```mysql
+SELECT TABLE_NAME, COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME LIKE '%algo%'
+````
+
+Los comodines '%' pueden combinarse usando solo al comienzo o solo al final.
+
+
+
+
 
