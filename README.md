@@ -298,3 +298,12 @@ mysql> CREATE TABLE [table name] (name VARCHAR(20));
 mysql> create table [table name] (personid int(50) not null auto_increment primary key,firstname varchar(35),middlename varchar(50),lastnamevarchar(50) default 'somethiing');
 ````
 
+## Buscar por nombre de columnas en todas las tablas de la Base
+```mysql
+SELECT DISTINCT TABLE_NAME 
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE COLUMN_NAME IN ('columna_a_buscar')
+        AND TABLE_SCHEMA='nombre_base'
+````
+
+
