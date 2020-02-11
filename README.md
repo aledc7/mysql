@@ -270,22 +270,17 @@ mysql> LOAD DATA INFILE '/tmp/filename.csv' replace INTO TABLE [table name] FIEL
 
 ## Dump all databases for backup. Backup file is sql commands to recreate all db's.
 ```mysql
-# mysqldump -u username -ppassword --opt > /tmp/alldatabases.sql
-````
-
-## Dump one database for backup.
-```mysql
-# mysqldump -u username -ppassword --databases databasename > /tmp/databasename.sql
+mysqldump -u username --password=MySecretPassword nombreBaseDatos > /home/aledc/BackUps/databasename.sql
 ````
 
 ## Dump a table from a database.
 ```mysql
-# mysqldump -u username -ppassword databasename tablename > /tmp/databasename.tablename.sql
+mysqldump -u username --password=MySecretPassword nombreBaseDatos nombretabla > /home/aledc/BackUps/tablaname.sql
 ````
 
 ## Restore database (or database table) from backup.
 ```mysql
-# mysql -u username -ppassword databasename < /tmp/databasename.sql
+mysqldump -u username --password=MySecretPassword nombreBaseDatos < /home/aledc/BackUps/databasename.sql
 ````
 
 ## Create Table Example 1.
