@@ -268,19 +268,21 @@ mysql> alter table [table name] drop index [colmn name];
 mysql> LOAD DATA INFILE '/tmp/filename.csv' replace INTO TABLE [table name] FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (field1,field2,field3);
 ````
 
-## Dump all databases for backup. Backup file is sql commands to recreate all db's.
+## Exportar Base de Datos Completa
 ```mysql
 mysqldump -u username --password=MySecretPassword nombreBaseDatos > /home/aledc/BackUps/databasename.sql
 ````
 
-## Dump a table from a database.
+## Exportar solo una tabla
 ```mysql
 mysqldump -u username --password=MySecretPassword nombreBaseDatos nombretabla > /home/aledc/BackUps/tablaname.sql
 ````
 
-## Restore database (or database table) from backup.
-```mysql
-mysqldump -u username --password=MySecretPassword nombreBaseDatos < /home/aledc/BackUps/databasename.sql
+## Importar Base de datos
+```js
+mysql -u nombre_usuario -p base_de_datos < archivo.sql
+
+# Luego de esto pedirá la contraseña para la base de datos creada en donde se quiere importar el archovo.
 ````
 
 ## Create Table Example 1.
