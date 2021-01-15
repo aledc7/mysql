@@ -313,6 +313,16 @@ WHERE COLUMN_NAME LIKE '%algo%'
 Los comodines '%' pueden combinarse usando solo al comienzo o solo al final.
 
 
+________________________________________________________________________________   
+## update column with value from another table
+```php
+UPDATE log_simcards l 
+INNER JOIN ope_operacioneslineas pl  ON l.simcard = pl.linea_simcard
+SET l.estadoserial = pl.linea_simcard_estado
+where l.simcard=pl.linea_simcard and pl.linea_simcard_estado='EN'
+```
+________________________________________________________________________________   
+
 
 
 
